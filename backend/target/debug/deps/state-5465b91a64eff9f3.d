@@ -1,0 +1,12 @@
+/Users/zakuan/Projects/rust/query-app/backend/target/debug/deps/libstate-5465b91a64eff9f3.rmeta: /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs
+
+/Users/zakuan/Projects/rust/query-app/backend/target/debug/deps/libstate-5465b91a64eff9f3.rlib: /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs
+
+/Users/zakuan/Projects/rust/query-app/backend/target/debug/deps/state-5465b91a64eff9f3.d: /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs /Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs
+
+/Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs:
+/Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs:
+/Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs:
+/Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs:
+/Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs:
+/Users/zakuan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs:
