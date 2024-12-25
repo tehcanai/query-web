@@ -1,14 +1,12 @@
 #[macro_use]
 extern crate rocket;
-use crate::lib::engine;
+use crate::core::engine;
 use csv::Reader;
-use rocket::serde::json::Json;
 use rocket::serde::{Deserialize, Serialize};
 use rocket::{form::Form, fs::TempFile};
 use std::collections::HashMap;
-use std::{fs::File, ptr::read};
 
-mod lib;
+mod core;
 
 #[get("/")]
 fn index() -> &'static str {
