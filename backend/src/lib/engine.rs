@@ -3,12 +3,12 @@ use datafusion::prelude::*;
 
 use record_batch::RecordBatch;
 
-pub async fn query() -> datafusion::error::Result<String> {
+pub async fn query_csv(query: &str) -> datafusion::error::Result<String> {
     let ctx = SessionContext::new();
     ctx.register_csv("uploaded", "tmp/uploaded.csv", CsvReadOptions::new())
         .await?;
 
-    let df = ctx.sql("SELECT * FROM uploaded").await?;
+    let df = ctx.sql(query).await?;
 
     let results: Vec<RecordBatch> = df.collect().await?;
 

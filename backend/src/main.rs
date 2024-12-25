@@ -2,7 +2,10 @@
 extern crate rocket;
 use crate::lib::engine;
 use csv::Reader;
-use rocket::fs::TempFile;
+use rocket::serde::json::Json;
+use rocket::serde::{Deserialize, Serialize};
+use rocket::{form::Form, fs::TempFile};
+use std::collections::HashMap;
 use std::{fs::File, ptr::read};
 
 mod lib;
@@ -12,9 +15,17 @@ fn index() -> &'static str {
     "The site is live"
 }
 
-#[get("/process")]
-async fn process_csv() -> String {
-    let results = engine::query().await;
+#[derive(Deserialize, Serialize)]
+#[serde(crate = "rocket::serde")]
+struct QueryResponse {
+    query: String,
+    response: String,
+}
+
+#[post("/query", data = "<form>")]
+async fn query(form: Form<HashMap<String, String>>) -> String {
+    let query = form.get("query").map(|q| q.clone()).unwrap_or_default();
+    let results = engine::query_csv(query.as_str()).await;
     match results {
         Ok(s) => s,
         Err(s) => s.strip_backtrace(),
@@ -37,5 +48,5 @@ async fn upload_csv(mut file: TempFile<'_>) -> &'static str {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index, upload_csv, process_csv])
+    rocket::build().mount("/", routes![index, upload_csv, query])
 }
